@@ -1,0 +1,102 @@
+convertall
+-------------------------------------------
+ConvertAll is a unit converter, written in PyQt.
+
+With ConvertAll, you can combine the units any way you want. If you want
+to convert from inches per decade, that's fine. Or from meter-pounds. Or
+from cubic nautical miles. The units don't have to make sense to anyone
+else.
+
+Runtime equirements:
+  cygwin-1.5.24-2
+  python-2.5.1-1
+  python-qt-3.17.2-2
+
+Canonical homepage:
+  http://www.bellz.org/convertall/
+
+-------------------------------------------
+
+Build instructions:
+  unpack convertall-0.3.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./convertall-0.3.2-X.cygport all
+
+This will create:
+  /usr/src/convertall-0.3.2-X-src.tar.bz2
+  /usr/src/convertall-0.3.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/convertall
+  /usr/lib/convertall/convertall.py
+  /usr/lib/convertall/convertall.pyc
+  /usr/lib/convertall/convertall.pyo
+  /usr/lib/convertall/convertdlg.py
+  /usr/lib/convertall/convertdlg.pyc
+  /usr/lib/convertall/convertdlg.pyo
+  /usr/lib/convertall/finddlg.py
+  /usr/lib/convertall/finddlg.pyc
+  /usr/lib/convertall/finddlg.pyo
+  /usr/lib/convertall/helpview.py
+  /usr/lib/convertall/helpview.pyc
+  /usr/lib/convertall/helpview.pyo
+  /usr/lib/convertall/numedit.py
+  /usr/lib/convertall/numedit.pyc
+  /usr/lib/convertall/numedit.pyo
+  /usr/lib/convertall/numeval1.py
+  /usr/lib/convertall/numeval1.pyc
+  /usr/lib/convertall/numeval1.pyo
+  /usr/lib/convertall/numeval2.py
+  /usr/lib/convertall/numeval2.pyc
+  /usr/lib/convertall/numeval2.pyo
+  /usr/lib/convertall/option.py
+  /usr/lib/convertall/option.pyc
+  /usr/lib/convertall/option.pyo
+  /usr/lib/convertall/optiondlg.py
+  /usr/lib/convertall/optiondlg.pyc
+  /usr/lib/convertall/optiondlg.pyo
+  /usr/lib/convertall/tmpcontrol.py
+  /usr/lib/convertall/tmpcontrol.pyc
+  /usr/lib/convertall/tmpcontrol.pyo
+  /usr/lib/convertall/unitatom.py
+  /usr/lib/convertall/unitatom.pyc
+  /usr/lib/convertall/unitatom.pyo
+  /usr/lib/convertall/unitdata.py
+  /usr/lib/convertall/unitdata.pyc
+  /usr/lib/convertall/unitdata.pyo
+  /usr/lib/convertall/unitedit.py
+  /usr/lib/convertall/unitedit.pyc
+  /usr/lib/convertall/unitedit.pyo
+  /usr/lib/convertall/unitgroup.py
+  /usr/lib/convertall/unitgroup.pyc
+  /usr/lib/convertall/unitgroup.pyo
+  /usr/lib/convertall/unitlistview.py
+  /usr/lib/convertall/unitlistview.pyc
+  /usr/lib/convertall/unitlistview.pyo
+  /usr/share/applications/convertall.desktop
+  /usr/share/convertall/units.dat
+  /usr/share/doc/Cygwin/convertall-0.3.2.README
+  /usr/share/doc/convertall-0.3.2/INSTALL
+  /usr/share/doc/convertall-0.3.2/LICENSE
+  /usr/share/doc/convertall-0.3.2/README.html
+  /usr/share/icons/convertall_lg.png
+  /usr/share/icons/convertall_sm.png
+
+------------------
+
+Port Notes:
+
+----- version 0.3.2-1 -----
+Version bump; built for python-2.5.
+
+----- version 0.3.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
