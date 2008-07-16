@@ -8,31 +8,37 @@ from cubic nautical miles. The units don't have to make sense to anyone
 else.
 
 Runtime equirements:
-  cygwin-1.5.24-2
-  python-2.5.1-1
-  python-qt-3.17.2-2
+  python-2.5.2-2
+  python-qt4-4.4.2-1
 
 Canonical homepage:
-  http://www.bellz.org/convertall/
+  http://convertall.bellz.org/
+
+Canonical download:
+  http://developer.berlios.de/projects/convertall/
 
 -------------------------------------------
 
 Build instructions:
-  unpack convertall-0.3.2-X-src.tar.bz2
+  unpack convertall-0.4.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./convertall-0.3.2-X.cygport all
+  cygport ./convertall-0.4.2-X.cygport all
 
 This will create:
-  /usr/src/convertall-0.3.2-X-src.tar.bz2
-  /usr/src/convertall-0.3.2-X.tar.bz2
+  /usr/src/convertall-0.4.2-X-src.tar.bz2
+  /usr/src/convertall-0.4.2-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
+  /etc/postinstall/convertall.sh
   /usr/bin/convertall
+  /usr/lib/convertall/cmdline.py
+  /usr/lib/convertall/cmdline.pyc
+  /usr/lib/convertall/cmdline.pyo
   /usr/lib/convertall/convertall.py
   /usr/lib/convertall/convertall.pyc
   /usr/lib/convertall/convertall.pyo
@@ -45,24 +51,27 @@ Files included in the binary package:
   /usr/lib/convertall/helpview.py
   /usr/lib/convertall/helpview.pyc
   /usr/lib/convertall/helpview.pyo
+  /usr/lib/convertall/icondict.py
+  /usr/lib/convertall/icondict.pyc
+  /usr/lib/convertall/icondict.pyo
+  /usr/lib/convertall/modbutton.py
+  /usr/lib/convertall/modbutton.pyc
+  /usr/lib/convertall/modbutton.pyo
   /usr/lib/convertall/numedit.py
   /usr/lib/convertall/numedit.pyc
   /usr/lib/convertall/numedit.pyo
-  /usr/lib/convertall/numeval1.py
-  /usr/lib/convertall/numeval1.pyc
-  /usr/lib/convertall/numeval1.pyo
-  /usr/lib/convertall/numeval2.py
-  /usr/lib/convertall/numeval2.pyc
-  /usr/lib/convertall/numeval2.pyo
   /usr/lib/convertall/option.py
   /usr/lib/convertall/option.pyc
   /usr/lib/convertall/option.pyo
+  /usr/lib/convertall/optiondefaults.py
+  /usr/lib/convertall/optiondefaults.pyc
+  /usr/lib/convertall/optiondefaults.pyo
   /usr/lib/convertall/optiondlg.py
   /usr/lib/convertall/optiondlg.pyc
   /usr/lib/convertall/optiondlg.pyo
-  /usr/lib/convertall/tmpcontrol.py
-  /usr/lib/convertall/tmpcontrol.pyc
-  /usr/lib/convertall/tmpcontrol.pyo
+  /usr/lib/convertall/setup.py
+  /usr/lib/convertall/setup.pyc
+  /usr/lib/convertall/setup.pyo
   /usr/lib/convertall/unitatom.py
   /usr/lib/convertall/unitatom.pyc
   /usr/lib/convertall/unitatom.pyo
@@ -79,17 +88,28 @@ Files included in the binary package:
   /usr/lib/convertall/unitlistview.pyc
   /usr/lib/convertall/unitlistview.pyo
   /usr/share/applications/convertall.desktop
+  /usr/share/convertall/icons/convertall.svg
+  /usr/share/convertall/icons/convertall_lg.png
+  /usr/share/convertall/icons/convertall_med.png
+  /usr/share/convertall/icons/convertall_sm.png
+  /usr/share/convertall/icons/helpback.png
+  /usr/share/convertall/icons/helpforward.png
+  /usr/share/convertall/icons/helphome.png
   /usr/share/convertall/units.dat
-  /usr/share/doc/Cygwin/convertall-0.3.2.README
-  /usr/share/doc/convertall-0.3.2/INSTALL
-  /usr/share/doc/convertall-0.3.2/LICENSE
-  /usr/share/doc/convertall-0.3.2/README.html
-  /usr/share/icons/convertall_lg.png
-  /usr/share/icons/convertall_sm.png
+  /usr/share/doc/convertall-0.4.2/INSTALL
+  /usr/share/doc/convertall-0.4.2/LICENSE
+  /usr/share/doc/convertall-0.4.2/README.html
+  /usr/share/icons/hicolor/16x16/apps/convertall.png
+  /usr/share/icons/hicolor/32x32/apps/convertall.png
+  /usr/share/icons/hicolor/64x64/apps/convertall.png
+  /usr/share/icons/hicolor/scalable/apps/convertall.svg
 
 ------------------
 
 Port Notes:
+
+----- version 0.4.2-1 -----
+Version bump for PyQt4.
 
 ----- version 0.3.2-1 -----
 Version bump; built for python-2.5.

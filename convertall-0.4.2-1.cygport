@@ -1,0 +1,35 @@
+inherit python
+
+DESCRIPTION="Flexible unit converter"
+HOMEPAGE="http://convertall.bellz.org/"
+SRC_URI="mirror://berlios/${PN}/${P}.tar.gz"
+SRC_DIR="ConvertAll"
+
+src_compile() { :; }
+src_test() { :; }
+
+src_install() {
+	cd ${S}
+	${PYTHON} install.py \
+		-b ${D} \
+		-d /usr/share/doc/${P} \
+		-i /usr/share/${PN}/icons \
+		-p /usr \
+		|| error "install.py failed"
+
+	python_optimize /usr/lib/${PN}
+
+	insinto /usr/share/icons/hicolor/scalable/apps
+	doins ${S}/icons/${PN}.svg
+
+	insinto /usr/share/icons/hicolor/64x64/apps
+	newins ${S}/icons/${PN}_lg.png ${PN}.png
+
+	insinto /usr/share/icons/hicolor/32x32/apps
+	newins ${S}/icons/${PN}_med.png ${PN}.png
+
+	insinto /usr/share/icons/hicolor/16x16/apps
+	newins ${S}/icons/${PN}_sm.png ${PN}.png
+
+	make_desktop_entry ${PN} ConvertAll ${PN} "Calculator;Utility;Qt"
+}
