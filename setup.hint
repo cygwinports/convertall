@@ -1,5 +1,5 @@
 category: Math KDE
-requires: python python-qt4
+requires: python python-pyqt4
 sdesc: "Flexible unit converter using PyQt"
 ldesc: "ConvertAll is a unit converter, written in PyQt.
 With ConvertAll, you can combine the units any way you want. If you want

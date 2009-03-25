@@ -8,8 +8,8 @@ from cubic nautical miles. The units don't have to make sense to anyone
 else.
 
 Runtime equirements:
-  python-2.5.2-2
-  python-qt4-4.4.2-1
+  python-2.5.4-1
+  python-pyqt4-4.4.4-10
 
 Canonical homepage:
   http://convertall.bellz.org/
@@ -96,9 +96,9 @@ Files included in the binary package:
   /usr/share/convertall/icons/helpforward.png
   /usr/share/convertall/icons/helphome.png
   /usr/share/convertall/units.dat
-  /usr/share/doc/convertall-0.4.2/INSTALL
-  /usr/share/doc/convertall-0.4.2/LICENSE
-  /usr/share/doc/convertall-0.4.2/README.html
+  /usr/share/doc/convertall/INSTALL
+  /usr/share/doc/convertall/LICENSE
+  /usr/share/doc/convertall/README.html
   /usr/share/icons/hicolor/16x16/apps/convertall.png
   /usr/share/icons/hicolor/32x32/apps/convertall.png
   /usr/share/icons/hicolor/64x64/apps/convertall.png
@@ -108,14 +108,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 0.4.2-1 -----
-Version bump for PyQt4.
-
------ version 0.3.2-1 -----
-Version bump; built for python-2.5.
-
------ version 0.3.1-1 -----
-Initial release for Cygwin.
+----- version 0.4.2-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
