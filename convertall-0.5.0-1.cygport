@@ -2,7 +2,8 @@ inherit python
 
 DESCRIPTION="Flexible unit converter"
 HOMEPAGE="http://convertall.bellz.org/"
-SRC_URI="mirror://berlios/${PN}/${P}.tar.gz"
+SRC_URI="mirror://berlios/${PN}/${P}.tar.gz
+         mirror://berlios/${PN}/${PN}-i18n-${PV}b.tar.gz"
 PATCH_URI="0.4.2-helpview-url.patch"
 
 SRC_DIR="ConvertAll"
