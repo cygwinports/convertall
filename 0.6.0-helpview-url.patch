@@ -1,0 +1,11 @@
+--- origsrc/ConvertAll/source/helpview.py	2014-01-23 19:39:57.000000000 -0600
++++ src/ConvertAll/source/helpview.py	2015-03-15 02:17:42.009887100 -0500
+@@ -33,7 +33,7 @@ class HelpView(QtGui.QMainWindow):
+         if sys.platform.startswith('win'):
+             path = path.replace('\\', '/')
+         self.textView.setSearchPaths([os.path.dirname(path)])
+-        self.textView.setSource(QtCore.QUrl('file:///{0}'.format(path)))
++        self.textView.setSource(QtCore.QUrl('file://{0}'.format(path)))
+         self.resize(520, 440)
+         self.setWindowTitle(caption)
+         tools = self.addToolBar('Tools')

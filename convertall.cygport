@@ -1,8 +1,8 @@
-inherit python
+inherit python3
 
 NAME="convertall"
-VERSION=0.5.2
-RELEASE=2
+VERSION=0.6.0
+RELEASE=1
 CATEGORY="Math"
 SUMMARY="Flexible unit converter using PyQt"
 DESCRIPTION="ConvertAll is a unit converter, written in PyQt. With ConvertAll,
@@ -10,37 +10,37 @@ you can combine the units any way you want. If you want to convert from inches
 per decade, that's fine. Or from meter-pounds. Or from cubic nautical miles.
 The units don't have to make sense to anyone else."
 HOMEPAGE="http://convertall.bellz.org/"
-SRC_URI="mirror://sourceforge/convertall/${P}.tar.gz
-         mirror://sourceforge/convertall/${PN}-i18n-${PV}a.tar.gz"
-PATCH_URI="0.4.2-helpview-url.patch"
-
+SRC_URI="mirror://sourceforge/convertall/${NAME}-${VERSION}.tar.gz"
 SRC_DIR="ConvertAll"
+PATCH_URI="0.6.0-helpview-url.patch"
+
+ARCH=noarch
 
 src_compile() { :; }
 src_test() { :; }
 
 src_install() {
 	cd ${S}
-	${PYTHON} install.py \
+	${PYTHON3} install.py \
 		-b ${D} \
-		-d /usr/share/doc/${PN} \
-		-i /usr/share/${PN}/icons \
+		-d /usr/share/doc/${NAME} \
+		-i /usr/share/${NAME}/icons \
 		-p /usr \
 		|| error "install.py failed"
 
-	python_optimize /usr/lib/${PN}
+	python3_optimize /usr/share/${NAME}
 
 	insinto /usr/share/icons/hicolor/scalable/apps
-	doins ${S}/icons/${PN}.svg
+	doins ${S}/icons/${NAME}.svg
 
 	insinto /usr/share/icons/hicolor/64x64/apps
-	newins ${S}/icons/${PN}_lg.png ${PN}.png
+	newins ${S}/icons/${NAME}_lg.png ${NAME}.png
 
 	insinto /usr/share/icons/hicolor/32x32/apps
-	newins ${S}/icons/${PN}_med.png ${PN}.png
+	newins ${S}/icons/${NAME}_med.png ${NAME}.png
 
 	insinto /usr/share/icons/hicolor/16x16/apps
-	newins ${S}/icons/${PN}_sm.png ${PN}.png
+	newins ${S}/icons/${NAME}_sm.png ${NAME}.png
 
-	make_desktop_entry ${PN} ConvertAll ${PN} "Calculator;Utility;Qt"
+	make_desktop_entry ${NAME} ConvertAll ${NAME} "Calculator;Utility;Qt"
 }
