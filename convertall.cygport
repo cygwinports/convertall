@@ -2,7 +2,7 @@ inherit python3
 
 NAME="convertall"
 VERSION=0.6.0
-RELEASE=1
+RELEASE=2
 CATEGORY="Math"
 SUMMARY="Flexible unit converter using PyQt"
 DESCRIPTION="ConvertAll is a unit converter, written in PyQt. With ConvertAll,
