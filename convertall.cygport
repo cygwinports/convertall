@@ -1,8 +1,8 @@
 inherit python3
 
 NAME="convertall"
-VERSION=0.6.0
-RELEASE=2
+VERSION=0.7.2
+RELEASE=1
 CATEGORY="Math"
 SUMMARY="Flexible unit converter using PyQt"
 DESCRIPTION="ConvertAll is a unit converter, written in PyQt. With ConvertAll,
@@ -12,7 +12,7 @@ The units don't have to make sense to anyone else."
 HOMEPAGE="http://convertall.bellz.org/"
 SRC_URI="mirror://sourceforge/convertall/${NAME}-${VERSION}.tar.gz"
 SRC_DIR="ConvertAll"
-PATCH_URI="0.6.0-helpview-url.patch"
+PATCH_URI="0.7.2-helpview-url.patch"
 
 ARCH=noarch
 
