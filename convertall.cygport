@@ -1,7 +1,7 @@
 inherit python3
 
 NAME="convertall"
-VERSION=0.7.2
+VERSION=0.7.3
 RELEASE=1
 CATEGORY="Math"
 SUMMARY="Flexible unit converter using PyQt"
